@@ -31,3 +31,5 @@ const PostData:IPost[] =[
         date: new Date()
     }
 ];
+
+export default PostData
