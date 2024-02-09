@@ -6,15 +6,30 @@
         </span>
         <h1>{{ props.title }}</h1>
         <p>{{ props.body }}</p>
+        <button @click="clicked()">Clickme</button>
+        <!--<input type="text" v-model="titulo">-->
     </div>
 </template>
 <script lang="ts" setup>
-import type { IPost } from '@/interfaces/IPost'
+    import type { IPost } from '@/interfaces/IPost'
+    import { ref } from 'vue'
+
     const props = defineProps<IPost>()
+    const emits = defineEmits(['SayHi'])
+   /* const titulo = ref('')*/
+    /*const copia = props;*/
+
+
+    //Funciones
+    const clicked = () =>{
+        alert("Hola desde el hijo")
+    }
 </script>
 
 <style scoped>
     .card{
-        border-color: red;
+        border: 1px solid red;
+        padding: 10px;
+        margin: 5px;
     }
 </style>
