@@ -22,7 +22,7 @@
 
     //Funciones
     const clicked = () =>{
-        alert("Hola desde el hijo")
+        emits('SayHi', props.id)
     }
 </script>
 

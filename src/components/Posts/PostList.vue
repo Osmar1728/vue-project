@@ -1,9 +1,9 @@
 <template>
     <div>
         <!---->
-        <button @click="click()">Click</button>
+        <button @click="click($event)">Click</button>
         <PostItem 
-            @say-hi="click()"
+            @say-hi="click($event)"
             v-bind="post" 
             v-for="(post, index) in PostData" 
             :key="index"/>
@@ -12,8 +12,8 @@
 <script lang="ts" setup>
     import PostData from '@/data/PostData'
     import PostItem from './PostItem.vue'
-    const click = () => {
-        alert('Hola desde el padre')
+    const click = (event:any) => {
+        alert('Hola desde el padre ' + event)
     }
 </script>
 <style scoped></style>
