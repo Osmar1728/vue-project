@@ -7,7 +7,7 @@
         <h1>{{ props.title }}</h1>
         <p>{{ props.body }}</p>
         <button @click="clicked()">Clickme</button>
-        <!--<input type="text" v-model="titulo">-->
+
     </div>
 </template>
 <script lang="ts" setup>
@@ -16,11 +16,7 @@
 
     const props = defineProps<IPost>()
     const emits = defineEmits(['SayHi'])
-   /* const titulo = ref('')*/
-    /*const copia = props;*/
 
-
-    //Funciones
     const clicked = () =>{
         emits('SayHi', props.id)
     }

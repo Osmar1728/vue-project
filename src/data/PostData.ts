@@ -1,35 +1,38 @@
-import type { IPost } from "@/interfaces/IPost"
-const PostData:IPost[] =[
+import type { IPost } from "@/interface/IPost"
+
+const PostData: IPost[] = [
+
     {
-        id: 1,
-        title : 'adjkshajds',
-        body : 'adjhdahduahsudhqasd',
+        id:1,
+        title: 'MESSI',
+        body:'BARCELONA',
         date: new Date()
     },
     {
-        id: 2,
-        title : 'zxcvbnm,',
-        body : 'asdfghujikop',
+        id:2,
+        title: 'CR7',
+        body:'MAN U',
         date: new Date()
     },
     {
-        id: 3,
-        title : 'awzexbhnjmkl',
-        body : 'xesrdcfvgbhnj kmm',
+        id:3,
+        title: 'MBAPPE',
+        body:'PSG',
         date: new Date()
     },
     {
-        id: 4,
-        title : 'asdfghjukiyuhgdfrwefcsd ',
-        body : 'qwertyuiop',
+        id:4,
+        title: 'HAALAND',
+        body:'NORUEGA',
         date: new Date()
     },
     {
-        id: 5,
-        title : 'axcsdvnhmjy,kulgfytdrew',
-        body : 'qwzexrdctfvgybhnjmklxsrdbhnj',
+        id:5,
+        title: 'VARGAS',
+        body:'ATLAS',
         date: new Date()
     }
-];
+
+]
 
 export default PostData
